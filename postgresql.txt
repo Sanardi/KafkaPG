@@ -1,0 +1,11 @@
+
+CREATE DATABASE MarziasKafkaThing;
+
+USE MarziasKafkaThing;
+
+CREATE TABLE kafkadata (
+    id UUID PRIMARY KEY,
+    time TIMESTAMP with time zone;),
+    response_time SMALLINT,
+    status_code SMALLINT,
+);
