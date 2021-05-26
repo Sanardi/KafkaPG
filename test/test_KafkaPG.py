@@ -35,7 +35,7 @@ class KafkaPGOnlineTests(unittest.TestCase):
 
     def test_db(self):
 
-        uri = "postgres://avnadmin:gmr7ls2v4zqjdqis@pg-marzia-azam-9f68.aivencloud.com:28386/defaultdb?sslmode=require"
+        uri = "postgres:/user:pass@db.server.com:28386/defaultdb?sslmode=require"
         db_conn = psycopg2.connect(uri)
         c = db_conn.cursor(cursor_factory=RealDictCursor)
         c.execute("SELECT 1 = 1")
